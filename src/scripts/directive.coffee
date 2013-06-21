@@ -10,7 +10,7 @@ ngTable: Table + Angular JS
 @license New BSD License <http://creativecommons.org/licenses/BSD/>
 ###
 
-angular.module("ngTable", []).directive("ngTable", ["$compile", "$q", "$parse", "$http", "ngTableParams", ($compile, $q, $parse, $http, ngTableParams) ->
+angular.module("ngTable", ["ui.bootstrap"]).directive("ngTable", ["$compile", "$q", "$parse", "$http", "ngTableParams", ($compile, $q, $parse, $http, ngTableParams) ->
   restrict: "A"
   priority: 1001
   scope: true
