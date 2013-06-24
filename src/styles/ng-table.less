@@ -74,3 +74,46 @@
         margin-top: 0;
     }
 }
+
+
+@media only screen and (max-width: 800px) {
+
+  .responsive {
+    td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      text-align:left;
+      font-weight: bold;
+    }
+    thead {
+      tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+    }
+    td {
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+      white-space: normal;
+      text-align:left;
+    }
+    tr {
+      border: 1px solid #ccc;
+    }
+  }
+  .responsive table,.responsive thead,.responsive tbody,.responsive th,.responsive td,.responsive tr {
+    display: block;
+  }
+
+  /*
+  Label the data
+  */
+  .responsive td:before { content: attr(title); }
+}
